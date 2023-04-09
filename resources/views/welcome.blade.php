@@ -1,797 +1,459 @@
-<!DOCTYPE html>
-<html lang="en"><!-- Basic -->
-<head>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-   
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
- 
-     <!-- Site Metas -->
-    <title>Hawi Foundation- Health With Humanity</title>  
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+@extends('layouts.template')
+@section('content')
+<div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/haw10.jpg);">
+    <div class="hero-section">
+      <div class="container text-center wow zoomIn">
+        <span class="subhead">Welcome To Hawi Foundation</span>
+        <h1 class="display-4">Health With Humanity</h1>
+        <a href="{{url('/get_involved')}}" class="btn btn-primary py-2 px-4 ms-3">Get Involved</a>
+      </div>
+    </div>
+  </div>
 
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/hawi.jpeg">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Pogo Slider CSS -->
-    <link rel="stylesheet" href="css/pogo-slider.min.css">
-	<!-- Site CSS -->
-    <link rel="stylesheet" href="css/style.css">    
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
-
-	<!-- LOADER -->
-     <!-- <div id="preloader">
-		<div class="loader">
-			<img src="images/preloader.gif" alt="" />
-		</div>
-    </div>end loader -->
-    <!-- END LOADER -->
-	
-	<!-- Start top bar -->
-	<div class="main-top">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="left-top">
-						<a class="new-btn-d br-2" href="#"><span>Book Appointment</span></a>
-						<div class="mail-b"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> demo@gmail.com</a></div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="wel-nots">
-						<p>Welcome to Hawi Foundation</p>
-					</div>
-					<div class="right-top">
-						<ul>
-							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End top bar -->
-	
-	<!-- Start header -->
-	<header class="top-header">
-		<nav class="navbar header-nav navbar-expand-lg">
-            <div class="container">
-				<a class="navbar-brand" href="/#"><img style="img width="100em" height="80em"" src="images/logo.jpeg" alt="image"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
-                    <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="#home">Home</a></li>
-                        <li><a class="nav-link" href="#about">About Us</a></li>
-                        <li><a class="nav-link" href="#services">Services</a></li>
-						<li><a class="nav-link" href="#appointment">Appointment</a></li>
-                        <li><a class="nav-link" href="#gallery">Gallery</a></li>
-						<li><a class="nav-link" href="#team">Doctor</a></li>
-                        <li><a class="nav-link" href="#blog">Blog</a></li>
-						<li><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+  <div class="bg-light">
+    <div class="page-section py-3 mt-md-n5 custom-index">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card-service wow fadeInUp">
+              <div class="circle-shape bg-primary text-white">
+                <span class="mai-shield-checkmark"></span>
+              </div>
+              <p>Charity Work</p>
             </div>
-        </nav>
-	</header>
-	<!-- End header -->
-	
-	<!-- Start Banner -->
-	<div class="ulockd-home-slider">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="pogoSlider" id="js-main-slider">
-					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(images/slider-01.jpg);">
-						<div class="lbox-caption pogoSlider-slide-element">
-							<div class="lbox-details">
-								<h1>Welcome to Hawi Foundation</h1>
-								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum </p>
-								<a href="#" class="btn">Contact Us</a>
-							</div>
-						</div>
-					</div>
-					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(images/slider-02.jpg);">
-						<div class="lbox-caption pogoSlider-slide-element">
-							<div class="lbox-details">
-								<h1>We are Expert in The Field of Health Lab</h1>
-								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum</p>
-								<a href="#appointment" class="btn">Appointment</a>
-							</div>
-						</div>
-					</div>
-					<div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url(images/slider-03.jpg);">
-						<div class="lbox-caption pogoSlider-slide-element">
-							<div class="lbox-details">
-								<h1>Welcome to Health Lab</h1>
-								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum </p>
-								<a href="#" class="btn">Contact Us</a>
-							</div>
-						</div>
-						
-					</div>
-				</div><!-- .pogoSlider -->
-			</div>
-		</div>
-	</div>
-	<!-- End Banner -->
-	
-	<!-- Start About us -->
-	<div id="about" class="about-box">
-		<div class="about-a1">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="title-box">
-							<h2>About Us</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="row align-items-center about-main-info">
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<h2> Welcome to Health Lab </h2>
-								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum, suscipit sit amet auctor quis, vehicula ut leo. Maecenas felis nulla, tincidunt ac blandit a, consectetur quis elit. Nulla ut magna eu purus cursus sagittis. Praesent fermentum tincidunt varius. Proin sit amet tempus magna. Fusce pellentesque vulputate urna. </p>
-								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum, suscipit sit amet auctor quis, vehicula ut leo. Maecenas felis nulla, tincidunt ac blandit a, consectetur quis elit. Nulla ut magna eu purus cursus sagittis. Praesent fermentum tincidunt varius. Proin sit amet tempus magna. Fusce pellentesque vulputate urna. </p>
-								<a href="#" class="new-btn-d br-2">Read More</a>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<div class="about-m">
-									<ul id="banner">
-										<li>
-											<img src="images/about-img-01.jpg" alt="">
-										</li>
-										<li>
-											<img src="images/about-img-02.jpg" alt="">
-										</li>
-										<li>
-											<img src="images/about-img-03.jpg" alt="">
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End About us -->
-	
-	<!-- Start Services -->
-	<div id="services" class="services-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="title-box">
-						<h2>Services</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="owl-carousel owl-theme">
-						<div class="item">
-							<div class="serviceBox">
-								<div class="service-icon"><i class="fa fa-h-square" aria-hidden="true"></i></div>
-								<h3 class="title">Lorem ipsum dolor</h3>
-								<p class="description">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
-								</p>
-								<a href="#" class="new-btn-d br-2">Read More</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="serviceBox">
-								<div class="service-icon"><i class="fa fa-heart" aria-hidden="true"></i></div>
-								<h3 class="title">Lorem ipsum dolor</h3>
-								<p class="description">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
-								</p>
-								<a href="#" class="new-btn-d br-2">Read More</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="serviceBox">
-								<div class="service-icon"><i class="fa fa-hospital-o" aria-hidden="true"></i></div>
-								<h3 class="title">Lorem ipsum dolor</h3>
-								<p class="description">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
-								</p>
-								<a href="#" class="new-btn-d br-2">Read More</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="serviceBox">
-								<div class="service-icon"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
-								<h3 class="title">Lorem ipsum dolor</h3>
-								<p class="description">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
-								</p>
-								<a href="#" class="new-btn-d br-2">Read More</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="serviceBox">
-								<div class="service-icon"><i class="fa fa-wheelchair" aria-hidden="true"></i></div>
-								<h3 class="title">Lorem ipsum dolor</h3>
-								<p class="description">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
-								</p>
-								<a href="#" class="new-btn-d br-2">Read More</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="serviceBox">
-								<div class="service-icon"><i class="fa fa-plus-square" aria-hidden="true"></i></div>
-								<h3 class="title">Lorem ipsum dolor</h3>
-								<p class="description">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
-								</p>
-								<a href="#" class="new-btn-d br-2">Read More</a>
-							</div>
-						</div>
-						<div class="item"> 
-							<div class="serviceBox">
-								<div class="service-icon"><i class="fa fa-medkit" aria-hidden="true"></i></div>
-								<h3 class="title">Lorem ipsum dolor</h3>
-								<p class="description">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
-								</p>
-								<a href="#" class="new-btn-d br-2">Read More</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="serviceBox">
-								<div class="service-icon"><i class="fa fa-user-md" aria-hidden="true"></i></div>
-								<h3 class="title">Lorem ipsum dolor</h3>
-								<p class="description">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
-								</p>
-								<a href="#" class="new-btn-d br-2">Read More</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="serviceBox">
-								<div class="service-icon"><i class="fa fa-ambulance" aria-hidden="true"></i></div>
-								<h3 class="title">Lorem ipsum dolor</h3>
-								<p class="description">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur.
-								</p>
-								<a href="#" class="new-btn-d br-2">Read More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>			
-		</div>
-	</div>
-	<!-- End Services -->
-	
-	<!-- Start Appointment -->
-	<div id="appointment" class="appointment-main">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="title-box">
-						<h2>Appointment</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6 col-md-6">
-					<div class="well-block">
-                        <div class="well-title">
-                            <h2>Book an Appointment</h2>
-                        </div>
-                        <form>
-                            <!-- Form start -->
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label" for="name">Name</label>
-                                        <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md">
-                                    </div>
-                                </div>
-                                <!-- Text input-->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label" for="email">Email</label>
-                                        <input id="email" name="email" type="text" placeholder="E-Mail" class="form-control input-md">
-                                    </div>
-                                </div>
-                                <!-- Text input-->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label" for="date">Preferred Date</label>
-                                        <input id="date" name="date" type="text" placeholder="Preferred Date" class="form-control input-md">
-                                    </div>
-                                </div>
-                                <!-- Select Basic -->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="control-label" for="time">Preferred Time</label>
-                                        <select id="time" name="time" class="form-control">
-                                            <option value="8:00 to 9:00">8:00 to 9:00</option>
-                                            <option value="9:00 to 10:00">9:00 to 10:00</option>
-                                            <option value="10:00 to 1:00">10:00 to 1:00</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!-- Select Basic -->
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="control-label" for="appointmentfor">Department</label>
-                                        <select id="appointmentfor" name="appointmentfor" class="form-control">
-                                            <option value="Choose Department">Choose Department</option>
-											<option value="Gynacology">Gynacology</option>
-											<option value="Dermatologist">Dermatologist</option>
-											<option value="Orthology">Orthology</option>
-											<option value="Anesthesiology">Anesthesiology</option>
-											<option value="Ayurvedic">Ayurvedic</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!-- Button -->
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <button id="singlebutton" name="singlebutton" class="new-btn-d br-2">Make An Appointment</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        <!-- form end -->
-                    </div>
-				</div>
-				<div class="col-lg-6 col-md-6">
-					<div class="well-block">
-                        <div class="well-title">
-                            <h2>Why Appointment with Us</h2>
-                        </div>
-                        <div class="feature-block">
-                            <div class="feature feature-blurb-text">
-                                <h4 class="feature-title">24/7 Hours Available</h4>
-                                <div class="feature-content">
-                                    <p>Integer nec nisi sed mi hendrerit mattis. Vestibulum mi nunc, ultricies quis vehicula et, iaculis in magnestibulum.</p>
-                                </div>
-                            </div>
-                            <div class="feature feature-blurb-text">
-                                <h4 class="feature-title">Experienced Staff Available</h4>
-                                <div class="feature-content">
-                                    <p>Aliquam sit amet mi eu libero fermentum bibendum pulvinar a turpis. Vestibulum quis feugiat risus. </p>
-                                </div>
-                            </div>
-                            <div class="feature feature-blurb-text">
-                                <h4 class="feature-title">Low Price & Fees</h4>
-                                <div class="feature-content">
-                                    <p>Praesent eu sollicitudin nunc. Cras malesuada vel nisi consequat pretium. Integer auctor elementum nulla suscipit in.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Appointment -->
-	
-	<!-- Start Gallery -->
-	<div id="gallery" class="gallery-box">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="title-box">
-						<h2>Gallery</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="popup-gallery row clearfix">
-				<div class="col-md-3 col-sm-6">
-					<div class="box-gallery">
-						<img src="images/gallery-01.jpg" alt="">
-						<div class="box-content">	
-							<h3 class="title">Lorem ipsum dolor</h3>
-							<ul class="icon">
-								<li><a href="images/gallery-01.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="box-gallery">
-						<img src="images/gallery-02.jpg" alt="">
-						<div class="box-content">
-							<h3 class="title">Lorem ipsum dolor</h3>
-							<ul class="icon">
-								<li><a href="images/gallery-02.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">					
-					<div class="box-gallery">
-						<img src="images/gallery-03.jpg" alt="">
-						<div class="box-content">							
-							<ul class="icon">
-								<li><a href="images/gallery-03.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="box-gallery">
-						<img src="images/gallery-04.jpg" alt="">
-						<div class="box-content">	
-							<h3 class="title">Lorem ipsum dolor</h3>
-							<ul class="icon">
-								<li><a href="images/gallery-04.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="box-gallery">
-						<img src="images/gallery-05.jpg" alt="">
-						<div class="box-content">							
-							<h3 class="title">Lorem ipsum dolor</h3>
-							<ul class="icon">
-								<li><a href="images/gallery-05.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">					
-					<div class="box-gallery">
-						<img src="images/gallery-06.jpg" alt="">
-						<div class="box-content">
-							<h3 class="title">Lorem ipsum dolor</h3>
-							<ul class="icon">
-								<li><a href="images/gallery-06.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="box-gallery">
-						<img src="images/gallery-07.jpg" alt="">
-						<div class="box-content">
-							<h3 class="title">Lorem ipsum dolor</h3>
-							<ul class="icon">
-								<li><a href="images/gallery-07.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="box-gallery">
-						<img src="images/gallery-08.jpg" alt="">
-						<div class="box-content">		
-							<h3 class="title">Lorem ipsum dolor</h3>
-							<ul class="icon">
-								<li><a href="images/gallery-08.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>								
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Gallery -->
-	
-	<!-- Start Team -->
-	<div id="team" class="team-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="title-box">
-						<h2>Our Doctor</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="images/img-1.jpg" alt="">
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title">Williamson</h3>
-                            <span class="post">web developer</span>
-                            <ul class="social">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="images/img-2.jpg" alt="">
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title">kristina</h3>
-                            <span class="post">Web Designer</span>
-                            <ul class="social">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <div class="our-team">
-                        <div class="pic">
-                            <img src="images/img-3.jpg" alt="">
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title">Steve Thomas</h3>
-                            <span class="post">web developer</span>
-                            <ul class="social">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card-service wow fadeInUp">
+              <div class="circle-shape bg-primary text-white">
+                <span class="mai-shield-checkmark"></span>
+              </div>
+              <p>Electives & Internships</p>
             </div>
-			
-		</div>
-	</div>
-	
-	<!-- End Team -->
-	
-	<!-- Start Blog -->
-	<div id="blog" class="blog-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="title-box">
-						<h2>Blog</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="blog-inner">
-						<div class="blog-img">
-							<img class="img-fluid" src="images/blog-img-01.jpg" alt="" />
-						</div>
-						<div class="item-meta">
-							<a href="#"><i class="fa fa-comments-o"></i> 5 Comment </a>
-							<a href="#"><i class="fa fa-user-o"></i> Admin</a>
-							<span class="dti">25 July 2018</span>
-						</div>
-						<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
-						<a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="blog-inner">
-						<div class="blog-img">
-							<img class="img-fluid" src="images/blog-img-02.jpg" alt="" />
-						</div>
-						<div class="item-meta">
-							<a href="#"><i class="fa fa-comments-o"></i> 5 Comment </a>
-							<a href="#"><i class="fa fa-user-o"></i> Admin</a>
-							<span class="dti">25 July 2018</span>
-						</div>
-						<h2>Proin vel sem ut lorem rhoncus lacinia. </h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
-						<a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="blog-inner">
-						<div class="blog-img">
-							<img class="img-fluid" src="images/blog-img-03.jpg" alt="" />
-						</div>
-						<div class="item-meta">
-							<a href="#"><i class="fa fa-comments-o"></i> 5 Comment </a>
-							<a href="#"><i class="fa fa-user-o"></i> Admin</a>
-							<span class="dti">25 July 2018</span>
-						</div>
-						<h2>Aliquam egestas magna a malesuada rutrum. </h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
-						<a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Blog -->
-	
-	<!-- Start Contact -->
-	<div id="contact" class="contact-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="title-box">
-						<h2>Contact us</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				
-				<div class="col-lg-12 col-xs-12">
-				  <div class="contact-block">
-					<form id="contactForm">
-					  <div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-								<div class="help-block with-errors"></div>
-							</div>                                 
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<input type="text" placeholder="Your number" id="number" class="form-control" name="number" required data-error="Please enter your number">
-								<div class="help-block with-errors"></div>
-							</div> 
-						</div>
-						<div class="col-md-12">
-							<div class="form-group"> 
-								<textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
-								<div class="help-block with-errors"></div>
-							</div>
-							<div class="submit-button text-center">
-								<button class="btn btn-common" id="submit" type="submit">Send Message</button>
-								<div id="msgSubmit" class="h3 text-center hidden"></div> 
-								<div class="clearfix"></div> 
-							</div>
-						</div>
-					  </div>            
-					</form>
-				  </div>
-				</div>
-				
-				
-				<div class="col-lg-12 col-xs-12">
-					<div class="left-contact">
-						<h2>Address</h2>
-						<div class="media cont-line">
-							<div class="media-left icon-b">
-								<i class="fa fa-location-arrow" aria-hidden="true"></i>
-							</div>
-							<div class="media-body dit-right">
-								<h4>Address</h4>
-								<p>Fleming 196 Woodside Circle Mobile, FL 36602</p>
-							</div>
-						</div>
-						<div class="media cont-line">
-							<div class="media-left icon-b">
-								<i class="fa fa-envelope" aria-hidden="true"></i>
-							</div>
-							<div class="media-body dit-right">
-								<h4>Email</h4>
-								<a href="#">demoinfo@gmail.com</a><br>
-								<a href="#">demoinfo@gmail.com</a>
-							</div>
-						</div>
-						<div class="media cont-line">
-							<div class="media-left icon-b">
-								<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-							</div>
-							<div class="media-body dit-right">
-								<h4>Phone Number</h4>
-								<a href="#">12345 67890</a><br>
-								<a href="#">12345 67890</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				
-			</div>
-		</div>
-	</div>
-	<!-- End Contact -->
-	
-	<!-- Start Subscribe -->
-	<div class="subscribe-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="subscribe-inner text-center clearfix">
-						<h2>Subscribe</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<form action="#" method="post">
-							<div class="form-group">
-								<input class="form-control-1" id="email-1" name="email" placeholder="Email Address" required="" type="text">
-							</div>
-							<div class="form-group">
-								<button type="submit" class="new-btn-d br-2">
-									Subscribe
-								</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Subscribe -->
-	
-	<!-- Start Footer -->
-	<footer class="footer-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<p class="footer-company-name">
-                        Copyright &copy; <script>document.write(new Date().getFullYear());</script>| <a href="http://mtaanitech-hub.co.ke"><span>Hawi Foundation</span></a> | All rights reserved.
-                    </p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- End Footer -->
-	
-	<a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card-service wow fadeInUp">
+              <div class="circle-shape bg-primary text-white">
+                <span class="mai-shield-checkmark"></span>
+              </div>
+              <p>Volunteer Work</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
 
-	<!-- ALL JS FILES -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.pogo-slider.min.js"></script> 
-	<script src="js/slider-index.js"></script>
-	<script src="js/smoothscroll.js"></script>
-	<script src="js/TweenMax.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
-	<script src="js/isotope.min.js"></script>	
-	<script src="js/images-loded.min.js"></script>	
-    <script src="js/custom.js"></script>
-</body>
-</html>
+    <div class="page-section py-3 mt-md-n5 custom-index">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card-service wow fadeInUp">
+              <div class="circle-shape bg-primary text-white">
+                <span class="mai-shield-checkmark"></span>
+              </div>
+              <p>Community Projects</p>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card-service wow fadeInUp">
+              <div class="circle-shape bg-primary text-white">
+                <span class="mai-shield-checkmark"></span>
+              </div>
+              <p><span>Clinical Services</p>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card-service wow fadeInUp">
+              <div class="circle-shape bg-primary text-white">
+                <span class="mai-shield-checkmark"></span>
+              </div>
+              <p>Health & Social Work</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br> 
+    
+    {{-- <div class="page-section banner-home bg-image" style="background-image: url(../assets/img/hawi6.jpg);">
+      <div class="container py-5 py-lg-0">
+        <div class="row align-items-center">
+          <div class="col-lg-4 wow zoomIn">
+          </div>
+          <div class="col-lg-8 wow fadeInRight">
+            <ul>
+              <li class="text-primary">Better Packages</li>
+              <li class="text-primary">Placement</li>
+              <li class="text-primary">Accomodation</li>
+              <li class="text-primary">Food & Drinks</li>
+              <li class="text-primary">Support Network</li>
+              <li class="text-primary">Travelling</li>
+        <a class="btn btn-dark ml-lg-3" href="{{url('/#')}}">Download FAQ's Here</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .banner-home --> --}}
+    
+     <div class="page-section bg-light">
+    <div class="container">
+      <h1 class="text-center wow fadeInUp sidebar-title">Our Medical Mission Services</h1>
+      <div class="row mt-5">
+        <div class="col-lg-4 py-2 wow zoomIn">
+          <div class="card-blog">
+            <div class="header">
+              <a href="{{url('/#')}}" class="post-thumb">
+                <img src="../assets/img/clinic1.jpeg" alt="">
+              </a>
+            </div>
+            <div class="body">
+              <h5 class="post-title text-danger">Field Surgery</h5>
+              <div class="site-info">
+                  <span class="text-primary">Mission</span>
+              <p>We work with local health facilities for these surgeries.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 py-2 wow zoomIn">
+          <div class="card-blog">
+            <div class="header">
+              <a href="{{url('/#')}}" class="post-thumb">
+                <img src="../assets/img/clinic2.jpeg" alt="">
+              </a>
+            </div>
+            <div class="body">
+              <h5 class="post-title text-danger">Consultation Room</h5>
+              <div class="site-info">
+                  <div class="site-info">
+                  <span class="text-primary">Mission</span>
+              <p>Hawi field  consultation rooms.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 py-2 wow zoomIn">
+          <div class="card-blog">
+            <div class="header">
+              <a href="{{url('/#')}}" class="post-thumb">
+                <img src="../assets/img/med3.jpg" alt="">
+              </a>
+            </div>
+            <div class="body">
+              <h5 class="post-title text-danger">General Surgery</h5>
+              <div class="site-info">
+                  <div class="site-info">
+                  <span class="text-primary">Mission</span>
+              <p>Some conditions we pick during our medical camps and treat.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 py-2 wow zoomIn">
+          <div class="card-blog">
+            <div class="header">
+              <a href="{{url('/#')}}" class="post-thumb">
+                <img src="../assets/img/med10.jpg" alt="">
+              </a>
+            </div>
+            <div class="body">
+              <h5 class="post-title text-danger">Sonography</h5>
+              <div class="site-info">
+                  <div class="site-info">
+                  <span class="text-primary">Mission</span>
+              <p>We do Sonography services during our camps.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 py-2 wow zoomIn">
+          <div class="card-blog">
+            <div class="header">
+              <a href="{{url('/#')}}" class="post-thumb">
+                <img src="../assets/img/person/bg_01.jpg" alt="">
+              </a>
+            </div>
+            <div class="body">
+              <h5 class="post-title text-danger">Field Phlebotomy for Laboratory</h5>
+              <div class="site-info">
+                  <div class="site-info">
+                  <span class="text-primary">Mission</span>
+              <p>We have comprehensive Laboratory services in our camps.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 py-2 wow zoomIn">
+          <div class="card-blog">
+            <div class="header">
+              <a href="{{url('/#')}}" class="post-thumb">
+                <img src="../assets/img/doctors/bg_02.jpg" alt="">
+              </a>
+            </div>
+            <div class="body">
+              <h5 class="post-title text-danger">Our Patners</h5>
+              <div class="site-info">
+                  <div class="site-info">
+                  <span class="text-primary">Mission</span>
+              <p>Project humanity</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 py-2 wow zoomIn">
+          <div class="card-blog">
+            <div class="header">
+              <a href="{{url('/#')}}" class="post-thumb">
+                <img src="../assets/img/med6.jpg" alt="">
+              </a>
+            </div>
+            <div class="body">
+              <h5 class="post-title text-danger">Eye Screening</h5>
+              <div class="site-info">
+                  <div class="site-info">
+                  <span class="text-primary">Mission</span>
+              <p>Our Field eye screening program</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 py-2 wow zoomIn">
+          <div class="card-blog">
+            <div class="header">
+              <a href="{{url('/#')}}" class="post-thumb">
+                <img src="../assets/img/hawi8.jpg" alt="">
+              </a>
+            </div>
+            <div class="body">
+              <h5 class="post-title text-danger">Field Pharmacy</h5>
+              <div class="site-info">
+                  <div class="site-info">
+                  <span class="text-primary">Mission</span>
+              <p>Patients receiving treatment during medical camp.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 py-2 wow zoomIn">
+          <div class="card-blog">
+            <div class="header">
+              <a href="{{url('/#')}}" class="post-thumb">
+                <img src="../assets/img/med7.jpg" alt="">
+              </a>
+            </div>
+            <div class="body">
+              <h5 class="post-title text-danger">Triage Session</h5>
+              <div class="site-info">
+                  <div class="site-info">
+                  <span class="text-primary">Mission</span>
+              <p>Based on any situation, the need and urgency of treatment is our priority.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div> 
+
+    <div class="page-section bg-light">
+    <div class="container">
+      <h1 class="text-center wow fadeInUp sidebar-title">Principles of Management</h1>
+      <div class="row mt-5">
+        <div class="col-lg-3 py-2 wow zoomIn">
+          <div class="card-blog">
+            <div class="header">
+              <div class="post-category">
+                <p class="text-white bg-dark">Motto</p>
+              </div>
+              <a href="{{url('/#')}}" class="post-thumb">
+                <img src="../assets/img/motto.png" alt="">
+              </a>
+            </div>
+            <div class="body">
+              <div class="site-info">
+                  <h5 class="text-primary">Our set of beliefs, ideals or ethical stance</h5>
+              <p>Health With Humanity, Afya na Utu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 py-2 wow zoomIn">
+          <div class="card-blog">
+            <div class="header">
+              <div class="post-category">
+                <p class="text-white bg-dark">Mision</p>
+              </div>
+              <a href="{{url('/#')}}" class="post-thumb">
+                <img src="../assets/img/vision.png" alt="">
+              </a>
+            </div>
+            <div class="body">
+              <div class="site-info">
+              <h5 class="text-primary">Mision Statement</h5>
+              <p>To reach out to the needy through state of art medical and surgical treatment across the region 
+                as well as equipped emmergency response team. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 py-2 wow zoomIn">
+          <div class="card-blog">
+            <div class="header">
+              <div class="post-category">
+                <p class="text-white bg-dark">Vision</p>
+              </div>
+              <a href="{{url('/#')}}" class="post-thumb">
+                <img src="../assets/img/vvision.jpg" alt="">
+              </a>
+            </div>
+            <div class="body">
+              <div class="site-info">
+              <h5 class="text-primary">Vision Statement</h5>
+              <p>To provide accesible, holistic, compassionate and evidence-based healthcare to the people of Kenya, 
+                where healthcare is embraced as holistic experience for all.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 py-2 wow zoomIn">
+          <div class="card-blog">
+            <div class="header">
+              <div class="post-category">
+                <p class="text-white bg-dark">Values</p>
+              </div>
+              <a href="{{url('/#')}}" class="post-thumb">
+                <img src="../assets/img/cvalue.png" alt="">
+              </a>
+            </div>
+            <div class="body">
+              <div class="site-info">
+              <h5 class="text-primary">Core Values</h5>
+              <ul>
+                <li>Humanity</li>
+                <li>Empathy</li>
+                <li>Intergrity</li>
+                <li>Compassion</li>
+                <li>Collaboration</li>
+                <li>Stewardship</li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="container">
+      <h1 class="text-center mb-5 wow fadeInUp sidebar-title">Testimonials</h1>
+
+      <div class="owl-carousel wow fadeInUp" id="doctorSlideshow">
+        <div class="item">
+          <div class="card-doctor">
+            <div class="body">
+              <h5 class="mb-0 ">Mike Mbuvi Sonko</h5>
+              <span class="text-sm text-primary">Former Governor, Nairobi County</span>
+              <p><em>“I first heard about Hawi Foundation when they were running medical camps at Kibera Slums in Nairobi,I visited their camp impromptu, that was the beggining of our awesome experience with Hawi Foundation.As a Senator and then Governor of Nairobi,we partnered and we conducted free medical camps in 19 slums in Nairobi County. So many people were helped and with our partnership we pick more patients for further and specialist care.
+              Community health volunteers were also activated in these slums under support by Hawi Foundation.“</em></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card-doctor">
+            <div class="body">
+              <h5 class="mb-0 ">Purity Chepchirchir</h5>
+              <span class="text-sm text-primary">Nandi County</span>
+              <p><em>"As a member  of meteitei  community,I want to register my appreciation for Hawi Foundation  medical camp that was conducted  at Aic meteitei  Station and surgeries  at meteitei  subcounty  Hospital. 
+              Many people benefited  especially  those who had no hope due to financial  constraints ,Hawi Foundation made sure that all people were reached and the equality  was there.The free treatment  and free surgeries  was the best thing  that my community were happy about it ..we built a forever  bond with Hawi family and they became our role model as youths."</em></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card-doctor">
+            <div class="body">
+              <h5 class="mb-0 ">Bethsheba Kwamboka</h5>
+              <span class="text-sm text-primary">Kisii County</span>
+              <p><em>"I was assisted through the medical camp that was done at Maxwel Academy Campus in Ogembo. 
+              I had Fibroids for many years and through Hawi Foundation I received treatemnt and surgery at Kisii Teaching and Referral Hospital.God bless them."</em></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card-doctor">
+            <div class="body">
+              <h5 class="mb-0 ">Elizabeth Adhiambo Ojijo</h5>
+              <span class="text-sm text-primary">Nurse, Mathare North Health Centre</span>
+              <p><em>"I want to register my appreciation for the Hawi Foundation for giving hope to the adolescents and pediatrics on ART care including their caregivers at Mathare North Health center. First by giving food basket and watches to the young ones.
+              These will help them in keeping time of their medication and the rate of suppression will now increase to achieve thr Tripple Zero.We are looking forward to more support especially on the area of our weekend Children HIV/ART Clinic."</em></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card-doctor">
+            <div class="body">
+              <h5 class="mb-0 ">Caren Awino</h5>
+              <span class="text-sm text-primary">Mechanical Engineer</span>
+              <p><em>“In the journey with Hawi Foundation, I have actually seen health desires been converted in to realty. It’s a great Privilege to be a Part of this great foundation. The Philanthropic work creates a great Influence on Society and Changing Minds, health and endevours of people for a brighter future of every members of our scoiety
+              .Hope you create MILESTONES ahead. Good Hawi Team.”</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- .page-section -->
+
+  <div class="page-section">
+    <div class="container">
+      <h1 class="text-center wow fadeInUp sidebar-title">Join Our Medical Mission</h1>
+ <p class="text-center">When you chose your medical electives with us,you help send free treatment and free surgery to a poor family somewhere in Kenya. Join us today!</p>
+      <form class="main-form">
+        <div class="row mt-5 ">
+          <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
+            <input type="text" class="form-control" placeholder="Full name">
+          </div>
+          <div class="col-12 col-sm-6 py-2 wow fadeInRight">
+            <input type="text" class="form-control" placeholder="Email address..">
+          </div>
+          <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
+            <select name="departement" id="departement" class="custom-select">
+              <option value="general">General Health</option>
+              <option value="cardiology">Electives/Internships</option>
+              <option value="dental">Medical Mission</option>
+              <option value="neurology">Volunteer</option>
+              <option value="orthopaedics">Donor</option>
+            </select>
+          </div>
+          <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
+            <input type="text" class="form-control" placeholder="Number..">
+          </div>
+          <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
+            <textarea name="message" id="message" class="form-control" rows="6" placeholder="Enter message.."></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Submit Request</button>
+      </form>
+    </div>
+  </div> <!-- .page-section -->
+
+
+@endsection
